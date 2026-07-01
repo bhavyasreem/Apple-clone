@@ -1,0 +1,12 @@
+{
+  "name": "apple-clone-webpage",
+  "version": "1.0.0",
+  "description": "Apple.com homepage clone using HTML, CSS, JS",
+  "scripts": {
+    "dev": "npx http-server -p 8080"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

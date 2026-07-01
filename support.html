@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Support</title>
+    <meta name="description" content="Apple Support is here to help. Get help with Apple Account password, repairs, billing, and troubleshooting.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav id="global-nav">
+        <div class="nav-content">
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" id="menu-toggle">
+                <span class="line line-top"></span>
+                <span class="line line-bottom"></span>
+            </button>
+
+            <a href="./index.html" class="nav-logo" aria-label="Apple Homepage" id="nav-logo-link">
+                <svg viewBox="0 0 18 18" width="18" height="18" fill="currentColor">
+                    <path d="M15.56 10.1c-.04-2.3 1.88-3.4 1.97-3.46-1.07-1.57-2.73-1.78-3.32-1.83-1.42-.15-2.78.84-3.5.84-.72 0-1.85-.82-3.04-.8-1.57.02-3 .92-3.81 2.33-1.63 2.83-.42 7 .16 8.64.49 1.4 1.13 2.96 2.64 2.9 1.46-.06 2.01-.95 3.77-.95 1.75 0 2.25.95 3.77.92 1.55-.02 2.1-.1.4-1.4-1.3-.95-2.07-2.2-2.1-4.72zM12.98 2.65c.62-.77 1.05-1.83.93-2.9-1 .04-2.12.67-2.83 1.5-.63.72-1.18 1.8-1.03 2.85 1.1.08 2.2-.5 2.93-1.45z"/>
+                </svg>
+            </a>
+
+            <ul class="nav-list">
+                <li><a href="./store.html" class="nav-link">Store</a></li>
+                <li><a href="./mac.html" class="nav-link">Mac</a></li>
+                <li><a href="./ipad.html" class="nav-link">iPad</a></li>
+                <li><a href="./iphone.html" class="nav-link">iPhone</a></li>
+                <li><a href="./watch.html" class="nav-link">Watch</a></li>
+                <li><a href="./airpods.html" class="nav-link">AirPods</a></li>
+                <li><a href="./tv-home.html" class="nav-link">TV & Home</a></li>
+                <li><a href="./entertainment.html" class="nav-link">Entertainment</a></li>
+                <li><a href="./accessories.html" class="nav-link">Accessories</a></li>
+                <li><a href="./support.html" class="nav-link active">Support</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="nav-action-btn" id="search-btn" aria-label="Search">
+                    <svg viewBox="0 0 18 18" width="18" height="18" fill="currentColor">
+                        <path d="M17.75 16.37l-4.5-4.5a7 7 0 1 0-1.38 1.38l4.5 4.5a1 1 0 1 0 1.38-1.38zM2 7a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"/>
+                    </svg>
+                </button>
+                <button class="nav-action-btn" id="bag-btn" aria-label="Bag">
+                    <svg viewBox="0 0 18 18" width="18" height="18" fill="currentColor">
+                        <path d="M14 6V5a5 5 0 0 0-10 0v1H2v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6zm-8-1a3 3 0 0 1 6 0v1H6zm8 11H4V8h10z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="search-overlay" id="search-overlay">
+            <div class="search-overlay-content">
+                <div class="search-bar">
+                    <svg class="search-bar-icon" viewBox="0 0 18 18" width="18" height="18" fill="currentColor">
+                        <path d="M17.75 16.37l-4.5-4.5a7 7 0 1 0-1.38 1.38l4.5 4.5a1 1 0 1 0 1.38-1.38zM2 7a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"/>
+                    </svg>
+                    <input type="text" id="search-input" placeholder="Search apple.com" autocomplete="off">
+                    <button class="search-clear-btn" id="search-clear">✕</button>
+                </div>
+                <div class="search-suggestions">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Apple Intelligence</a></li>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">AirPods Pro 3</a></li>
+                        <li><a href="#">iPhone 17 Pro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bag-dropdown" id="bag-dropdown">
+            <div class="bag-dropdown-content">
+                <p class="bag-status">Your Bag is empty.</p>
+                <div class="bag-actions-list">
+                    <a href="#" class="bag-action-link">Shop</a>
+                    <a href="#" class="bag-action-link">Sign in</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <ul class="mobile-nav-list">
+                <li><a href="./store.html" class="mobile-nav-link">Store</a></li>
+                <li><a href="./mac.html" class="mobile-nav-link">Mac</a></li>
+                <li><a href="./ipad.html" class="mobile-nav-link">iPad</a></li>
+                <li><a href="./iphone.html" class="mobile-nav-link">iPhone</a></li>
+                <li><a href="./watch.html" class="mobile-nav-link">Watch</a></li>
+                <li><a href="./airpods.html" class="mobile-nav-link">AirPods</a></li>
+                <li><a href="./tv-home.html" class="mobile-nav-link">TV & Home</a></li>
+                <li><a href="./entertainment.html" class="mobile-nav-link">Entertainment</a></li>
+                <li><a href="./accessories.html" class="mobile-nav-link">Accessories</a></li>
+                <li><a href="./support.html" class="mobile-nav-link active">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: var(--nav-height); background-color: var(--color-bg-dark);">
+        
+        <!-- Support Hero -->
+        <section class="support-hero scroll-reveal">
+            <h1>Apple Support</h1>
+            <div class="support-search-container">
+                <svg class="support-search-icon" viewBox="0 0 18 18" width="20" height="20" fill="currentColor">
+                    <path d="M17.75 16.37l-4.5-4.5a7 7 0 1 0-1.38 1.38l4.5 4.5a1 1 0 1 0 1.38-1.38zM2 7a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"/>
+                </svg>
+                <input type="text" class="support-search-input" placeholder="Search for topics, products, or questions" autocomplete="off">
+            </div>
+        </section>
+
+        <!-- Quick Help Grid -->
+        <section class="support-grid">
+            
+            <div class="support-card scroll-reveal">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--color-link)">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                </svg>
+                <h3>Forgotten Password</h3>
+                <p>Learn how to safely reset your Apple Account password and regain access to your iCloud backup and purchases.</p>
+                <a href="#" class="btn btn-secondary btn-sm" style="margin-top: 15px;">Reset password</a>
+            </div>
+
+            <div class="support-card scroll-reveal">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--color-link)">
+                    <path d="M22 2H2v20l4-4h16V2zm-2 12H6.83L5 15.83V4h15v10z"/>
+                </svg>
+                <h3>Apple Repairs</h3>
+                <p>Check the status of an existing repair request, make a Genius Bar reservation, or view AppleCare+ coverage details.</p>
+                <a href="#" class="btn btn-secondary btn-sm" style="margin-top: 15px;">Start a repair</a>
+            </div>
+
+            <div class="support-card scroll-reveal">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--color-link)">
+                    <path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                </svg>
+                <h3>Billing & Subscriptions</h3>
+                <p>Manage credit card settings, update billing address information, view purchase invoices, or request a refund.</p>
+                <a href="#" class="btn btn-secondary btn-sm" style="margin-top: 15px;">Manage billing</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer id="global-footer">
+        <div class="footer-content">
+            <section class="footer-footnotes">
+                <p>Need support on the go? Download the free Apple Support app from the App Store to chat with our technical experts.</p>
+            </section>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
